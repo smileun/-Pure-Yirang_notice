@@ -1,0 +1,157 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>봉사 공고글 관리</title>
+    <link rel="stylesheet" type="text/css" href="./manage_notice.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="container">
+        <!-- top bar -->
+        <div class="top-bar container__top-bar">
+          <div class="top-bar__logo">YIRANG</div>
+        </div>
+
+        <!-- 게시글 작성 버튼  -->
+        <!-- <div class="create container__create">
+          <button class="create__btn">게시글 작성 버튼</button>
+        </div> -->
+
+        <!-- content -->
+        <div class="content container__content">
+          <!-- notice information 게시물 설명  -->
+          <div class="notice content__notice">
+            <div class="notice__information">
+              <div class="information__text">해당 게시글을 선택하세요.</div>
+              <div class="information__icon">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+            <!-- notice선택된 게시글  -->
+
+            <div class="notice__select">
+              <table class="select__table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>제목</th>
+                    <th>봉사날짜</th>
+                    <th>봉사시간</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>수성구 재가봉사 09/20 모집합니다.</td>
+                    <td>20/09/20</td>
+                    <td>14:00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!---- notice수정버튼  ---->
+              <!---- notice삭제 버튼 --->
+              <div class="select__btn">
+                <div class="update__btn">update</div>
+                <div class="delete__btn">delete</div>
+              </div>
+            </div>
+            <!---- notice게시글 테이블 표시 ---->
+            <div class="notice__list">
+              <table class="notice__table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>제목</th>
+                    <th>봉사날짜</th>
+                    <th>봉사시간</th>
+                    <th>인원수</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>안녕하세요 수성구 재가봉사 09/20 모집합니다.</td>
+                    <td>20/08/31</td>
+                    <td>12:00</td>
+                    <td>11</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>2</td>
+                    <td>안녕하세요 수성구 재가봉사 09/20 모집합니다.</td>
+                    <td>20/08/31</td>
+                    <td>12:00</td>
+                    <td>11</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>3</td>
+                    <td>안녕하세요 수성구 재가봉사 09/20 모집합니다.</td>
+                    <td>20/08/31</td>
+                    <td>12:00</td>
+                    <td>11</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>4</td>
+                    <td>안녕하세요 수성구 재가봉사 09/20 모집합니다.</td>
+                    <td>20/08/31</td>
+                    <td>12:00</td>
+                    <td>11</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>5</td>
+                    <td>안녕하세요 수성구 재가봉사 09/20 모집합니다.</td>
+                    <td>20/08/31</td>
+                    <td>12:00</td>
+                    <td>11</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>6</td>
+                    <td>안녕하세요 수성구 재가봉사 09/20 모집합니다.</td>
+                    <td>20/08/31</td>
+                    <td>12:00</td>
+                    <td>11</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- 메뉴 나타내기 (왼쪽) -->
+          <div class="menu content__menu">
+            <div class="nav menu__nav">
+              <div class="nav__title">메뉴</div>
+              <div class="nav__btn">매칭 결과 확인</div>
+              <div class="nav__btn">봉사자 데이터 업로드</div>
+              <div class="nav__btn">봉사 공고글 관리</div>
+            </div>
+            <div class="info menu__info">
+              <div class="info__title">안녕하세요 망나뇽님</div>
+              <div class="info__card">
+                <div class="info__card--key">MODE</div>
+                <div class="info__card--value">"관리자" 모드</div>
+              </div>
+              <div class="info__card">
+                <div class="info__card--key">LOGIN</div>
+                <div class="info__card--value" onClick="{handleClick}">LOGOUT</div>
+              </div>
+            </div>
+            <div class="make menu__make">
+              <div class="make__btn">✍게시글 작성✍</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
